@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dylan Lopez</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #e8f0ff, #f5e9ff, #e6fff5);
+      color: #243047;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 900px;
+      background: rgba(255, 255, 255, 0.88);
+      border-radius: 30px;
+      padding: 55px 40px;
+      text-align: center;
+      box-shadow: 0 25px 55px rgba(90, 110, 180, 0.22);
+      border: 2px solid #ffffff;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 10px 24px;
+      border-radius: 30px;
+      background: #e0d7ff;
+      color: #6b4fd8;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      font-size: 62px;
+      color: #6b4fd8;
+      margin-bottom: 12px;
+      letter-spacing: 2px;
+    }
+
+    h2 {
+      font-size: 25px;
+      color: #1fbf9b;
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #556071;
+      max-width: 680px;
+      margin: auto;
+      margin-bottom: 35px;
+    }
+
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      padding: 14px 34px;
+      background: linear-gradient(135deg, #6b4fd8, #1fbf9b);
+      color: white;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: 0.3s;
+      box-shadow: 0 10px 25px rgba(107, 79, 216, 0.25);
+    }
+
+    .btn:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 30px rgba(31, 191, 155, 0.35);
+    }
+
+    .games {
+      margin-top: 45px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .game-box {
+      background: #f7f8ff;
+      padding: 25px 18px;
+      border-radius: 20px;
+      border: 1px solid #e3ddff;
+      transition: 0.3s;
+    }
+
+    .game-box:hover {
+      transform: translateY(-8px);
+      background: #eefcff;
+      border-color: #1fbf9b;
+    }
+
+    .game-box .icon {
+      font-size: 38px;
+      margin-bottom: 12px;
+    }
+
+    .game-box h3 {
+      color: #6b4fd8;
+      font-size: 21px;
+      margin-bottom: 10px;
+    }
+
+    .game-box p {
+      font-size: 15px;
+      margin-bottom: 0;
+      color: #667085;
+    }
+
+    footer {
+      margin-top: 35px;
+      color: #8892a6;
+      font-size: 14px;
+    }
+
+    @media (max-width: 750px) {
+      .card {
+        padding: 42px 24px;
+      }
+
+      h1 {
+        font-size: 42px;
+      }
+
+      h2 {
+        font-size: 21px;
+      }
+
+      .games {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <span class="badge">Zona Gamer</span>
+
+    <h1>Dylan López</h1>
+
+    <h2>Trabajo dela materia ISA</h2>
+
+    <p>
+      Bienvenido a un espacio inspirado en el mundo gamer, donde cada partida,
+      personaje y aventura se convierte en una experiencia única. Aquí la
+      diversión sube de nivel y la creatividad nunca se queda sin vidas.
+    </p>
+
+    <a href="#" class="btn">Entrar al juego</a>
+
+    <div class="games">
+      <div class="game-box">
+        <div class="icon">🎮</div>
+        <h3>Aventura</h3>
+        <p>Explora mundos, supera misiones y descubre nuevos retos.</p>
+      </div>
+
+      <div class="game-box">
+        <div class="icon">⚡</div>
+        <h3>Acción</h3>
+        <p>Velocidad, estrategia y emoción en cada partida.</p>
+      </div>
+
+      <div class="game-box">
+        <div class="icon">🏆</div>
+        <h3>Competencia</h3>
+        <p>Mejora tus habilidades y alcanza el siguiente nivel.</p>
+      </div>
+    </div>
+
+    <footer>
+      © 2026 Dylan Lopez | Gamer Mode Activado
+    </footer>
+  </div>
+
+</body>
+</html>
